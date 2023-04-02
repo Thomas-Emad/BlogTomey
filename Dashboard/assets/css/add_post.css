@@ -1,0 +1,140 @@
+:root {
+  --b-r: 10px;
+  --main-color: #eee;
+  --transition: 0.3s;
+}
+/* Start Code */
+.post {
+  position: relative;
+}
+.post form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  gap: 10px;
+}
+.post form .parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+.post form .parent:nth-child(1) {
+  width: 200%;
+}
+@media (max-width: 767px) {
+  .post form {
+    flex-direction: column;
+  }
+  .post form .parent:nth-child(1) {
+    width: 100%;
+  }
+  .post form .parent {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+.post form input:not(input[type="checkparent"], input[type="submit"]),
+.post form textarea {
+  outline: none;
+  border: solid 1px var(--main-color);
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: var(--b-r);
+  transition: var(--transition);
+}
+.post form input[name="title"] {
+  border: solid 1px #999 !important;
+}
+.post form textarea {
+  height: 200px;
+  font-size: 0.9rem;
+}
+.post form textarea:hover,
+.post form textarea:focus {
+  border: solid 1px #ddd !important;
+}
+.post form input[type="submit"] {
+  outline: none;
+  border: solid 1px #eee;
+  padding: 5px;
+  border-radius: var(--b-r);
+  transition: var(--transition);
+  font-weight: bold;
+}
+.post form input[type="submit"]:hover {
+  background-color: #ddd;
+}
+.post form .parent .file_input label {
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: var(--b-r);
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0;
+  transition: var(--transition);
+}
+.post form .parent .file_input input[type="file"] {
+  display: none;
+}
+.post form .parent .file_input label:hover {
+  background-color: #ddd;
+}
+.post form .parent .opstions {
+  background-color: var(--main-color);
+  border-radius: var(--b-r);
+  padding: 10px;
+}
+.post form .parent .opstions select {
+  width: 100%;
+  cursor: pointer;
+}
+.post form .parent .opstions .allow_comm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.post form .parent .opstions .allow_comm input,
+.post form .parent .opstions .allow_comm label {
+  margin: 0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.error {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--bs-red);
+}
+
+/* Information Write */
+.info-post {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+.info-post .button-close {
+  width: 50%;
+  outline: none;
+  border: none;
+  border-radius: var(--b-r);
+}
+.info-post .box {
+  padding: 10px 0;
+  border-bottom: solid 1px #777;
+}
+.info-post .box p {
+  margin: 0;
+}
+.info-post .box :nth-child(1) {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,173 @@
+.curent_post {
+  width: 100%;
+  padding: 10px;
+}
+.curent_post .head .title {
+  background: var(--colors);
+  color: #fff;
+  padding: 10px 0;
+  font-size: 1.7rem;
+  text-align: center;
+  border-radius: 50px;
+}
+.curent_post .head .info {
+  background-color: var(--black-color);
+  color: #fff;
+  width: 70%;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  border-bottom-right-radius: var(--b-r);
+  border-bottom-left-radius: var(--b-r);
+  right: 30px;
+  position: relative;
+}
+.curent_post .content_post {
+  padding: 15px 0;
+}
+.curent_post .content_post .bg-post {
+  width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .curent_post .content_post .bg-post {
+    width: 75%;
+  }
+}
+.curent_post .content_post .text {
+  color: #777;
+  font-size: 1rem;
+}
+.curent_post .content_post .text b {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.curent_post .commit .parent.allow_comment {
+  position: relative;
+}
+.curent_post .commit .parent.allow_comment::after {
+  content: "Can't Add Comment";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  opacity: 0.7;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.curent_post .commit .parent .send_mess {
+  padding: 20px;
+  border: solid 1px #eee;
+  font-size: 1rem;
+}
+.curent_post .commit .parent .send_mess h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.curent_post .commit .parent .send_mess h2 i {
+  color: #bd3057;
+}
+.curent_post .commit .parent .send_mess .add_commit {
+  display: flex;
+  justify-content: space-between;
+}
+.curent_post .commit .parent .send_mess .add_commit img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.curent_post .commit .parent .send_mess input {
+  outline: none;
+  border: none;
+  padding: 5px 0;
+  transition: var(--trans);
+}
+.curent_post .commit .parent .send_mess .add_commit input[type="text"] {
+  width: 70%;
+  border-bottom: solid 2px #ddd;
+}
+.curent_post .commit .parent .send_messm .add_commit input[type="text"]:hover,
+.curent_post .commit .parent .send_mess .add_commit input[type="text"]:focus {
+  border-bottom: solid 2px var(--main);
+}
+@media (max-width: 400px) {
+  .curent_post .commit .parent .send_mess .add_commit input[type="text"] {
+    width: 55%;
+  }
+}
+.curent_post .commit .parent .send_mess .add_commit input[type="submit"] {
+  padding: 5px 15px;
+  color: #fff;
+  background-color: var(--main);
+  border-radius: var(--b-r);
+}
+.curent_post .commit .parent .send_mess .add_commit input[type="submit"]:hover {
+  background-color: #bd3057;
+}
+
+.curent_post .commit .parent .last_comm {
+  padding: 20px;
+  border: solid 1px #eee;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.curent_post .commit .parent .last_comm h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.curent_post .commit .parent .last_comm h2 i {
+  color: #bd3057;
+}
+.curent_post .commit .parent .last_comm .box {
+  padding: 10px;
+  border-bottom: solid 1px #ddd;
+  display: flex;
+  gap: 10px;
+}
+.curent_post .commit .parent .last_comm .box .info {
+  width: 100%;
+}
+.curent_post .commit .parent .last_comm .box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.curent_post .commit .parent .last_comm .box .date,
+.curent_post .commit .parent .last_comm .box .name {
+  padding: 5px 10px;
+  background-color: var(--main);
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8rem;
+  border-radius: var(--b-r);
+}
+.curent_post .commit .parent .last_comm .box .dec {
+  font-size: 0.9rem;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.curent_post .commit .parent .last_comm .box .dec form {
+  margin: 0;
+}
+.curent_post .commit .parent .last_comm .box .dec .del_comm {
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #bd3057;
+  padding: 5px 10px;
+  border-radius: var(--b-r);
+  transition: var(--trans);
+  cursor: pointer;
+}
+.curent_post .commit .parent .last_comm .box .dec .del_comm:hover {
+  opacity: 0.8;
+}
