@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Cairo", sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff;
+      }
+      /* Start Container */
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+      }
+      /* Small */
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+      /* Medium */
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+      /* Large */
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+      /*####################################*/
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+      .parent .title {
+        text-align: center;
+      }
+      .parent .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .parent .container .box {
+        border: solid 1px #ddd;
+        border-radius: 10px;
+        padding: 5px;
+        width: 100%;
+        height: 80vh;
+      }
+      .parent .container .silder {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        .parent .container {
+          flex-direction: column;
+        }
+        .parent .container .silder {
+          width: 100%;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+      }
+      .m-0 {
+        margin: 0;
+      }
+      .link,
+      .parent .container .box ul li a:hover {
+        color: #03a9f4;
+      }
+      .title_section {
+        border-bottom: solid 1px #ddd;
+      }
+      .big_content {
+        overflow-y: auto;
+      }
+      hr {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h2 class="title">Documentation</h2>
+      <div class="container">
+        <div class="box silder">
+          <h2 class="title_section">- Titles</h2>
+          <ul>
+            <li><a href="#info">Information</a></li>
+            <li><a href="#install">How To Upload Files</a></li>
+            <li><a href="#home_page">Home Page Blog</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#posts">Posts | Dashboard</a></li>
+            <li><a href="#users">Users | Dashboard</a></li>
+            <li><a href="#profile">Profile | Dashboard</a></li>
+            <li><a href="#edit_design">Edit Design | Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="box big_content">
+          <div id="info">
+            <h2 class="title_section"># information</h2>
+            <div class="content">
+              <p class="m-0">- Site Name: BlogTomey</p>
+              <p class="m-0">
+                - Programmer:
+                <a
+                  href="https://github.com/Thomas-Emad"
+                  target="_blank"
+                  class="link"
+                  >Thomas Emad</a
+                >
+              </p>
+              <p class="m-0">- Creation Date: 2023/04/28</p>
+              <h4 class="m-0">## The normal usernames are:</h4>
+              <p class="m-0">
+                <b>- Email:</b> admin@gmail.com <br />
+                <b>- Password:</b> 123456 <br />
+                (You must change them because this is dangerous).
+              </p>
+              <p class="m-0" style="text-align: center">
+                I Have All CopyRight For This Site.
+              </p>
+              <b class="m-0" style="text-align: center; display: block">
+                I would like to thank you for buying this humble template and
+                they came to give you the benefit you want.
+              </b>
+            </div>
+          </div>
+          <hr />
+          <div id="install">
+            <h2 class="title_section"># How To Upload Files</h2>
+            <div class="content">
+              <ol class="m-0">
+                <li>
+                  When you decompress the files, you find two folders [Doc,
+                  Blog].
+                </li>
+                <li>Doc: This is a tutorial and instructions only.</li>
+                <li>Blog: This is the files for the entire project.</li>
+                <li>
+                  You will transfer all files to me in this glory to your
+                  hosting.
+                </li>
+              </ol>
+              <b class="m-0">
+                - From now on, if you have sufficient knowledge, continue. If
+                not, please go to a programmer to upload the files to the
+                hosting.
+              </b>
+              <ol start="5" class="m-0">
+                <li>
+                  You enter the Blog folder and take the 'tomblog.sql' file,
+                  which you will place on the PHPMYADMIN panel. That's all, my
+                  friend.
+                </li>
+                <li>
+                  When you want to edit the page or log in, go to the Dashboard
+                  section.
+                </li>
+                <li>
+                  In order to be able to set up the Contact Us section, tell the
+                  programmer who will upload it to the hosting to modify the
+                  phpmailer file
+                </li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div id="home_page">
+            <h2 class="title_section"># Home Page Blog</h2>
+            <div class="content">
+              <b class="m-0">
+                - This is the page where the user sees all of your articles.This
+                is the page where the user sees all of your articles
+              </b>
+              <ol class="m-0">
+                <li>
+                  On this page, the regular user will be able to see all the
+                  articles, and also can search for an article.
+                </li>
+                <li>
+                  There is also a silder move that gives the 3 most viewed
+                  article.
+                </li>
+                <li>
+                  Then there are many links in the navbar that you select from
+                  the control panel.
+                </li>
+                <li>
+                  And then there is the latest articles section, which consists
+                  of 6 articles.
+                </li>
+                <li>
+                  Finally, there is a footer, then you will find the labels
+                  section. In this section, there are all sections of articles.
+                </li>
+                <li>
+                  Then there is a place for the featured article, which you put
+                  in the same way also from the control panel.
+                </li>
+                <li>
+                  There is also a Contact Us section, where the user can send it
+                  to you via email.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div id="dashboard">
+            <h2 class="title_section"># Dashboard</h2>
+            <div class="content">
+              <p class="m-0">
+                - In order to be able to access the dashboard page, you go to
+                the main page and click on Log at the top of the site.
+              </p>
+              <h4>## What is this page made of?</h4>
+              <ol class="m-0">
+                <li>
+                  On the dashboard page, you will initially see four cards
+                  consisting of the number of all site visits, all articles, and
+                  the number of site owners who can download articles. It also
+                  consists of the number of all site members who create an
+                  account with you.
+                </li>
+                <li>
+                  Then the comments section appears for you until you go to an
+                  article, and you can also delete this user's comment if it is
+                  not good for you
+                </li>
+                <li>
+                  Also, you can see the news section so that you can follow all
+                  the moderators with you who have downloaded articles, and you
+                  can also see the new members who joined the site.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div id="posts">
+            <h2 class="title_section"># Posts | Dashboard</h2>
+            <div class="content">
+              <p class="m-0">
+                - On this page, you will be able to add an article, edit an
+                article, and delete any article.
+              </p>
+              <h4>## Instructions</h4>
+              <ol class="m-0">
+                <li>First see the Add Articles pane</li>
+                <li>
+                  After that, if you are the owner of the site, you will see all
+                  the articles so that you can modify anything or delete any
+                  article, but if you are a regular editor, you will only see
+                  your articles that you downloaded (this point will be
+                  clarified on the Users page).
+                </li>
+                <li>
+                  When adding a good article, the instructions page will appear
+                  for you. Please read it well so that you can add a new article
+                </li>
+                <li>And so on the edit page.</li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div id="users">
+            <h2 class="title_section"># Users | Dashboard</h2>
+            <div class="content">
+              <p class="m-0">
+                This is a simple page that shows you as an administrator of the
+                site iMac all users so that you can change the permissions of
+                anyone or delete their account.
+              </p>
+              <h4 class="m-0">## What are Permissions?</h4>
+              <p class="m-0">it the permissions that people have.</p>
+              <ol class="m-0">
+                <li>
+                  <b>Owner:</b> The owner can do everything, such as modifying
+                  the page, changing the permissions of others, adding an
+                  article, deleting any article, deleting any comment.
+                </li>
+                <li>
+                  <b>Admin:</b> admin can do everything like the owner, but he
+                  cannot modify the design of the page in terms of information,
+                  and he cannot change the powers of anyone or delete him.
+                </li>
+                <li>
+                  <b>Editor:</b> It is the editor that can only add a new
+                  article, modify it and delete it.
+                </li>
+                <li>
+                  <b>User:</b> He is the person who visited the site, but would
+                  like to create an account so that he can add a comment with
+                  his name only.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <hr />
+          <div id="profile">
+            <h2 class="title_section"># Profile | Dashboard</h2>
+            <div class="content">
+              <p class="m-0">- It is the only page a user can access.</p>
+              <p class="m-0">
+                - Only personal information can be modified and viewed.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div id="edit_design">
+            <h2 class="title_section"># Edit Design | Dashboard</h2>
+            <div class="content">
+              <p class="m-0">
+                - This is the page that only the owner can access, because from
+                it you can modify the page.
+              </p>
+              <p class="m-0">
+                <b> It can be modified on the main page, such as: <br /></b>
+                - changing the page title,<br />
+                - adding more sections and labels,<br />
+                - changing the site’s appearance to the dark one,<br />
+                - modifying the navbar to add more links,<br />
+                - changing the compressed site icon,<br />
+                - changing the links at the top of the site,<br />
+                - social media links,<br />
+                - and placing a distinctive post in footer.
+              </p>
+              <b style="display: block; text-align: center"
+                >.Thank you and I wish you luck.</b
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
