@@ -15,7 +15,7 @@ If you are going to try it yourself: you can try this email or create a new acco
 - Email: admin@gmail.com
 - Password: 123456
 - Your Permissions: Editor.
-You can try from [Here](https://thomas-emad.ml/projects/BlogTomey/index.php).
+You can try from [Here](https://thomas-emad.epizy.com/projects/BlogTomey/index.php).
 
 If you will create a new account:-
 - You write your data as normal after that.
